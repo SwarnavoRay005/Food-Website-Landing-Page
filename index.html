@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Food Plaza || Landing page</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="assets/banner.webp" alt="logo" />
+      </a>
+      <div class="search" onclick="searchBar()">
+        <i class="fa-solid fa-magnifying-glass" id="icon"></i>
+        <input type="text" placeholder="SEARCH" />
+      </div>
+      <nav class="bar">
+        <ul class="nav">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">BREAKFAST</a></li>
+          <li><a href="#">LUNCH</a></li>
+          <li><a href="#">DINNER</a></li>
+        </ul>
+        <div class="check-out">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="number">4</span>
+        </div>
+        <a class="menu" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </nav>
+      <ul class="nav-mobile">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">BREAKFAST</a></li>
+        <li><a href="#">LUNCH</a></li>
+        <li><a href="#">DINNER</a></li>
+      </ul>
+    </header>
+
+    <!-- BANNER SECTION -->
+
+    <div class="banner">
+      <div class="content">
+        <h1>Food <i class="fa-solid fa-heart"></i></h1>
+        <h2>Lovers</h2>
+      </div>
+      <div class="imgBox" onclick="toggleFlip()">
+        <div class="food">
+          <img
+            src="assets/plate-traditional-chicken-curry-set-spices-dark-table_220507-20740.avif"
+            alt="Food assortment"
+            class="food-img"
+          />
+        </div>
+        <div class="description">
+          <h3>Howdy Fellas!!</h3>
+          <p>
+            This is a special startup cafe by a group of college students. We
+            tend to sell affortable delicacies which will surely satisfy your
+            taste buds. You can also Download our app which is available at the
+            Google Play Store and with just a meagre amount of Rs.149/month ,
+            you can get access to our latest VIP news and announcements before
+            anyone else!!!
+          </p>
+          <ul class="download">
+            <li><img src="assets/google.png" alt="download" /></li>
+          </ul>
+          <span class="price">Rs.149</span>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+
+      <a href="#" class="btn" onclick="toggleFlip()">
+        learn more <i class="fa-solid fa-magnifying-glass-plus"></i>
+      </a>
+      <span class="order"><i class="fa-solid fa-bag-shopping"></i></span>
+
+      <!-- right side animation panel -->
+
+      <div class="selections">
+        <div class="circle">
+          <div
+            class="options one"
+            onclick="changeImg('top-view-delicious-meat-soup-with-potatoes-greens-dark-blue-desk_140725-76548.avif')"
+          >
+            <img
+              src="assets/top-view-delicious-meat-soup-with-potatoes-greens-dark-blue-desk_140725-76548.avif"
+              alt="food1"
+            />
+          </div>
+          <div
+            class="options two"
+            onclick="changeImg('high-angle-indian-food-assortment_23-2148747704.avif')"
+          >
+            <img
+              src="assets/high-angle-indian-food-assortment_23-2148747704.avif"
+              alt="food2"
+            />
+          </div>
+          <div
+            class="options three"
+            onclick="changeImg('indian-circular-food-frame-with-copy-space_23-2148723470.avif')"
+          >
+            <img
+              src="assets/indian-circular-food-frame-with-copy-space_23-2148723470.avif"
+              alt="food3"
+            />
+          </div>
+        </div>
+        <h1>Born Appetit</h1>
+      </div>
+    </div>
+
+    <!-- social media access -->
+
+    <ul class="social">
+      <li><i class="fa-brands fa-instagram"></i></li>
+      <li><i class="fa-brands fa-facebook"></i></li>
+      <li><i class="fa-brands fa-twitter"></i></li>
+    </ul>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="info">
+        <p>Hope you people like our services😊</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
